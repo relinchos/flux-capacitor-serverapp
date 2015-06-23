@@ -1,0 +1,21 @@
+{
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  },
+  "baseEmailDataSource": {
+    "name": "baseEmailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "localhost"
+      }
+    ]
+  },
+  "flux-capacitor-public-demo": {
+    "url": "mongodb://179.43.123.31:27017/flux-capacitor-public-demo",
+    "name": "flux-capacitor-public-demo",
+    "connector": "loopback-connector-mongodb"
+  }
+}

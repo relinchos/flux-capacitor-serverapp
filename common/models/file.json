@@ -1,0 +1,57 @@
+{
+  "name": "File",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "fileName": {
+      "type": "string"
+    },
+    "localFileName": {
+      "type": "string"
+    },
+    "originalFileName": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "size": {
+      "type": "number"
+    },
+    "folderRoute": {
+      "type": "string"
+    },
+    "containerName": {
+      "type": "string"
+    },
+    "fileNameInContainer": {
+      "type": "string"
+    },
+    "consolidated": {
+      "type": "boolean"
+    },
+    "comments": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    },
+    "personAvatarTarget": {
+      "type": "hasOne",
+      "model": "Person",
+      "foreignKey": ""
+    },
+    "teacherProfileAvatarTarget": {
+      "type": "hasOne",
+      "model": "teacherProfile",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Person",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": true,
+  "properties": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "nickName": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "string"
+    },
+    "dni": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "secondaryEmails": {
+      "type": [
+        "string"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "secondaryPhones": {
+      "type": [
+        "string"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "secondaryAddresses": {
+      "type": [
+        "string"
+      ]
+    },
+    "nationalities": {
+      "type": [
+        "object"
+      ]
+    },
+    "roles": {
+      "type": [
+        "string"
+      ]
+    },
+    "specificProfiles": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "teacherProfile": {
+      "type": "hasOne",
+      "model": "teacherProfile",
+      "foreignKey": ""
+    },
+    "avatarImage": {
+      "type": "hasOne",
+      "model": "File",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
+}

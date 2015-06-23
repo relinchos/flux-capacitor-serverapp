@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "flux-capacitor-public-demo",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "flux-capacitor-public-demo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "flux-capacitor-public-demo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "flux-capacitor-public-demo",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "flux-capacitor-public-demo",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "baseEmailDataSource"
+  },
+  "Person": {
+    "dataSource": "flux-capacitor-public-demo",
+    "public": true
+  },
+  "Int": {
+    "dataSource": null,
+    "public": true
+  }
+}

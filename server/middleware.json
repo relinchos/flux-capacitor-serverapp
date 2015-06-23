@@ -1,0 +1,38 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {
+    "compression": {}
+  },
+  "session": {
+
+  },
+  "auth": {
+
+  },
+  "parse": {
+  },
+  "routes": {
+    "loopback#status": {
+      "paths": "/status"
+    }
+  },
+  "files": {
+    "loopback#static": {
+      "params": "$!../../adminapp"
+    }
+  },
+
+
+  
+  "final:before": {
+    "loopback#urlNotFound": {}
+  },
+
+   "final:after": {
+    "loopback#errorHandler": {}
+    }
+
+  
+}

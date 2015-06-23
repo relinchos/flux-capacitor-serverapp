@@ -1,0 +1,6 @@
+,
+  "mongo_activityOverlord_TEST": {
+    "url": "mongodb://leandropio:demopassA1@kahana.mongohq.com:10001/activityOverlord",
+    "name": "mongo_activityOverlord_TEST",
+    "connector": "loopback-connector-mongodb"
+  }
