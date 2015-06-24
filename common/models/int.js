@@ -11,16 +11,15 @@ module.exports = function(Int, server) {
 		// };
 
 		var response = status;
-
-
     cb(null, response );
+
   };
 
   Int.remoteMethod(
     'status_',
     {
-      http: {path: '/status', verb: 'get'},
-      returns: {arg: 'status', type: 'string'}
+      http: {path: '/status_', verb: 'get'},
+      returns: {arg: 'status', type: 'object'}
     }
   );
 

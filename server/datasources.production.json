@@ -14,7 +14,7 @@
     ]
   },
   "flux-capacitor-public-demo": {
-    "url": "mongodb://179.43.123.31:27017/flux-capacitor-public-demo",
+    "url": "mongodb://179.43.123.31:27017/fluxcapacitorpublicdemo",
     "name": "flux-capacitor-public-demo",
     "connector": "loopback-connector-mongodb"
   }
