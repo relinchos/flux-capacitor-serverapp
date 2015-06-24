@@ -4,7 +4,7 @@ module.exports = function(Int, server) {
     
 		var status = {};
 
-		status.env = process.env.NODE_env;
+		status.env = process.env.NODE_ENV;
 
 		// status.conn = {
 		// 	port: server.get('port') || '000'
@@ -17,7 +17,7 @@ module.exports = function(Int, server) {
   };
 
   Int.remoteMethod(
-    'status',
+    'status_',
     {
       http: {path: '/status', verb: 'get'},
       returns: {arg: 'status', type: 'string'}
