@@ -16,6 +16,7 @@
   "flux-capacitor-public-demo": {
     "url": "mongodb://127.0.0.1:27017/flux-capacitor-public-demo",
     "name": "flux-capacitor-public-demo",
-    "connector": "loopback-connector-mongodb"
+    "connector": "loopback-connector-mongodb",
+    "connectionTimeout": 1000000
   }
 }

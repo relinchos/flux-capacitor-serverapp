@@ -16,6 +16,7 @@
   "flux-capacitor-public-demo": {
     "url": "mongodb://demouser:demopass@kahana.mongohq.com:10001/activityOverlord",
     "name": "flux-capacitor-public-demo",
-    "connector": "loopback-connector-mongodb"
+    "connector": "loopback-connector-mongodb",
+    "connectionTimeout": 1000000
   }
 }
