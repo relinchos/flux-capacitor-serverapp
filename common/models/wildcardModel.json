@@ -32,7 +32,14 @@
       "principalId": "$authenticated",
       "permission": "ALLOW",
       "property": "checkTokenValidity"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "checkTokenValidity"
     }
   ],
-  "methods": []
+  "methods": {}
 }

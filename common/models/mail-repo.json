@@ -1,0 +1,42 @@
+{
+  "name": "MailRepo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "from": {
+      "type": "string"
+    },
+    "textBody": {
+      "type": "string"
+    },
+    "htmlBody": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "mailerResponse": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string"
+    },
+    "communicationType": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

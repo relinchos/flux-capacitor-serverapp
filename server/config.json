@@ -28,6 +28,8 @@
   },
   "legacyExplorer": false,
   "fCSettings": {
-    "fileServeUrl": ""
+    "appName": "Flux-Capacitor Temporal App Name",
+    "fileServeUrl": "",
+    "webhost": "http://0.0.0.0:3000"
   }
 }

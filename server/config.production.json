@@ -23,7 +23,15 @@
       "credentials": true
     },
     "errorHandler": {
-      "disableStackTrace": false
+      "disableStackTrace": true
+    }
+  },
+  "legacyExplorer": false,
+  "fCSettings": {
+    "webhost": "",
+    "fileServeUrl": "",
+    "transactionalEmails": {
+      "from": ""
     }
   }
 }

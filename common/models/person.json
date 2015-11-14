@@ -1,9 +1,15 @@
 {
   "name": "Person",
   "base": "PersistedModel",
-  "strict": false,
+  "strict": true,
   "idInjection": true,
   "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
     "fullName": {
       "type": "string",
       "required": true
@@ -18,7 +24,7 @@
       "type": "string"
     },
     "dni": {
-      "type": "string"
+      "type": "Number"
     },
     "email": {
       "type": "string"
@@ -62,11 +68,6 @@
   },
   "validations": [],
   "relations": {
-    "teacherProfile": {
-      "type": "hasOne",
-      "model": "teacherProfile",
-      "foreignKey": ""
-    },
     "avatarImage": {
       "type": "hasOne",
       "model": "File",
@@ -93,5 +94,5 @@
       "permission": "ALLOW"
     }
   ],
-  "methods": []
+  "methods": {}
 }

@@ -9,7 +9,13 @@
     "transports": [
       {
         "type": "SMTP",
-        "host": "localhost"
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "",
+          "pass": ""
+        }
       }
     ]
   },
