@@ -1,5 +1,6 @@
 # Ignore /storage folder, it exists for local tests only
 storage/
+ecosystem.json 
 
 # Ignore client folder, cause it has its own repo
 # null

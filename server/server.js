@@ -85,7 +85,7 @@ var path = require('path');
 
 
 // Automatically send verification email upon user creation
-app.set('signup_autoSendVerification', true );
+app.set('signup_autoSendVerification', false );
 
 // Account (email) need to be verified to be able to login
 app.set('login_emailVerificationRequired', false );
